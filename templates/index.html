@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles.css')}}">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href={{ url_for('static', filename='fav.png') }}>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <nav class="navbar  navbar-expand-lg">
+    <a class="navbar-brand" href="#">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link right" href="#abs">Abstract</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#mod">Modules</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link left" href="#pes">P/E System</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link left" href="#pred">Prediction</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- First Container -->
+
+  <div class="first-container">
+    <div class="row r1">
+      <div class="col-sm-6 r1c1">
+        <h1 class="t">Sales Forecast Prediction</h1>
+        <p class="det">A machine learning model where it takes the sales history database as the
+          input and learns the insights and recognizes the sales pattern and allows user to provide
+          input and predicts the future sale of a product based on the user inputs.</p>
+      </div>
+      <div class="col-sm-6 r1c2">
+        <img src="{{ url_for('static', filename='img1.gif')}}" , style="width:450px;height:350px;border-radius:10%;">
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Container -->
+
+  <div class="row r2">
+    <div class="col-sm-5 r2c2">
+      <img src="{{url_for('static',filename='img2.gif')}}" class="img3">
+    </div>
+    <div class="col-sm-7 r2c1">
+      <p id="abs">Abstract</p>
+      <p class="absdet">Business intelligence is one of the demanded skills in information technology,
+        as it is the current stipulation, we have developed model where it predicts the future sales pattern
+        of a product by imparting the purchase history between a time period to the model. This project focuses
+        on analyzing and visualizing the regional sales of products. The underlying algorithm is based on the linear
+        regression and the random forest classifier. Segmenting consumer-based buying behavior and applying 80/20 rule
+        to identify top customers/products by applying Xgboost, Linear regression and Random forest classifier.</p>
+      <a href="{{url_for('static',filename='bp.pdf')}}" class="bpb" download>Download Base Paper</a>
+    </div>
+  </div>
+
+  <!-- Third Container -->
+
+  <div class="third-container" id="mod">
+    <div class="row r3">
+      <div class="col-sm-4 r3c1">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <p class="fe">Front-end</p>
+              <p class="fedet">Front-end web development,also known as client-side development
+                is the practice of producing HTML,CSS and JavaScript for a Website
+                or a Web application so that user can visualize and access them effortlessly.</p>
+            </div>
+            <div class="flip-card-back">
+              <div class="feli">
+                <p>HTML 5</p>
+                <p>CSS 3</p>
+                <p>JavaScript</p>
+                <p>Bootstrap 5</p>
+                <p>CDN Import</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 r3c2">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <p class="mw">Middleware</p>
+              <p class="mwdet">Middleware is software that provides common services and
+                capabilities to application outside of what's offered by the operating system.
+                Data management,application services,messaging,authentication and API management
+                are all commonly handled by middleware.</p>
+            </div>
+            <div class="flip-card-back">
+              <div class="mwli">
+                <p>Python</p>
+                <p>Flask</p>
+                <p>PyCharm</p>
+                <p>API</p>
+                <p>Folder Structure</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 r3c3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <p class="be">Back-end</p>
+              <p class="bedet">Back-end refers to the posterior works that are making the interface
+                to respond accordingly.It contains the behind scene activities that occur when performing
+                any action on a website.It can be an account login or making a purchase from an online store.</p>
+            </div>
+            <div class="flip-card-back">
+              <div class="beli">
+                <p>Model Architecture</p>
+                <p>Data pre-proccesing</p>
+                <p>Data Standardization</p>
+                <p>Prediction</p>
+                <p>Algorithm Used</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Fourth Container -->
+
+  <div class="row r4" id="pes">
+    <div class="col-sm-6 r4c1">
+      <h1 class="esh">Existing System</h1>
+      <p class="esdet">Although there are plenty of Machine learning model developed for
+        "SALES FORECASRING",the usage and scope of the model is not upto the level of expectation
+        and demand satisfying as many models referred by us makes use of common,well-known machine learning
+        algorithms such as Linear Regression,Logistic Regression and K-Nearest Neighbor's accuracy of the model
+        is not considered much as it delivers a very low performance metrics,by considering this is an impartment
+        case,it becomes a reason for developing a better model and user interactive.</p>
+      <h1 class="psh">Proposed System</h1>
+      <p class="psdet">Here in this project,we put forward a inception of "Flask".A framework developed
+        in python,rather than making a machine learning model that predicts the outlet sales,we find it would be
+        better if our work is published and a platform where users can make use of our project that is deploying
+        the machine learning model in an web app that delivers a content about the title and the current demand
+        ,project insights such as modules and its derivative,languages used,knowledge gathered and more on.Digging down
+        deeper we introduced a never seen machine learning algorithm by us namely "XGBoost".The reason behind selecting
+        this model is,most of the machine learning algorithm works and tries to refine itself based on accuracy but XGBoost
+        revamps itself based on error.So,we find it would be quite interesting to feed the data to the model.</p>
+    </div>
+    <div class="col-sm-6 r4c2">
+      <img src="{{url_for('static',filename='img3.gif')}}" class="img3">
+    </div>
+  </div>
+
+  <!--Fifth Container-->
+
+  <div class="phc" id="pred">
+    <p class="ph">Prediction</p>
+  </div>
+
+  <!-- ROW R5 -->
+
+  <!-- <div class="row r5">
+    <div class="col-sm-9 r5c1">
+      <form class="" action="/predict" method="post">
+        <div class="form-group fg1">
+          <p class="det">Represents the weight of the product in kgs.</p>
+          <label for="item_weight" class="ph-area lb">Enter Item Weight</label>
+          <input type="text" name="item_weight" id="item_weight" class="form-control" required>
+        </div>
+      </form>
+    </div>
+    <div class="col-sm-3"></div>
+  </div> -->
+
+  <!-- ROW R6 -->
+
+  <!-- <div class="row r6">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-9 r6c2">
+      <form class="" action="/predict" method="post">
+        <div class="form-group fg2">
+          <p class="det">Exhibits the fat content in the product(Low,Medium,High).</p>
+          <label for="item_fat_content" class="ph-area lb">Enter Item Fat Content</label>
+          <select class="form-control" name="item_fat_content" required="required">
+            <option value="" selected>Select Fat Content</option>
+            <option value="1">Low Fat</option>
+            <option value="2">Regular</option>
+            <option value="0">High Fat</option>
+          </select>
+        </div>
+      </form>
+    </div>
+  </div> -->
+
+  <!-- ROW R7 -->
+
+  <!-- <div class="row r7">
+    <div class="col-sm-9 r7c1">
+      <form class="" action="/predict" method="post">
+        <div class="form-group fg3">
+          <p class="det">Represents the type of the product(Listed down in drop down).</p>
+          <label for="item_type" class="ph-area lb">Enter Item Type</label>
+          <select class="form-control chosenn" name="item_type" required="required">
+            <option value="" selected>Select Item Type</option>
+            <option value="0">Baking Goods</option>
+            <option value="1">Breads</option>
+            <option value="2">Breakfast</option>
+            <option value="3">Canned</option>
+            <option value="4">Dairy</option>
+            <option value="5">Frozen Foods</option>
+            <option value="6">Fruits and Vegetables</option>
+            <option value="7">Hard Drinks</option>
+            <option value="8">Health and Hygiene</option>
+            <option value="9">Household</option>
+            <option value="10">Meat</option>
+            <option value="11">Others</option>
+            <option value="12">Seafood</option>
+            <option value="13">Snack Foods</option>
+            <option value="14">Soft Drinks</option>
+            <option value="15">Starchy Foods</option>
+          </select>
+        </div>
+      </form>
+    </div>
+  </div> -->
+
+  <!-- ROW R8 -->
+
+  <!-- <div class="row r8">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-9 r8c2">
+      <form class="" action="/predict" method="post">
+        <div class="form-group fg4">
+          <p class="det">Represents the prize of the item.</p>
+          <label for="item_mrp" class="ph-area lb">Enter Item MRP</label>
+          <input type="text" name="item_mrp" id="item_mrp" class="form-control" required>
+        </div>
+      </form>
+    </div>
+  </div> -->
+
+  <!-- ROW R9 -->
+
+  <!-- <div class="row r9">
+    <div class="col-sm-9 r9c1">
+      <form class="" action="/predict" method="post">
+        <div class="form-group fg5">
+          <p class="det">Describes the export size(High,Medium,Small).</p>
+          <label for="outlet_size" class="ph-area lb">Enter Outlet Size</label>
+          <select class="form-control chosenn" name="outlet_size" required="required">
+            <option value="" selected>Select Outlet Size</option>
+            <option value="0">High</option>
+            <option value="1">Medium</option>
+            <option value="2">Small</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <div class="col-sm-3"></div>
+  </div> -->
+
+  <!-- ROW R10 -->
+
+  <!-- <div class="row r10">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-9 r10c2">
+      <form class="" action="/predict" method="post">
+        <div class="form-group fg6">
+          <p class="det">Describe the product export from cities,categorized as Tier1,2,3.</p>
+          <label for="outlet_location_type" class="ph-area lb">Enter Outlet Location Type</label>
+          <select class="form-control chosenn" name="outlet_location_type" required="required">
+            <option value="" selected>Select Outlet Location Type</option>
+            <option value="0">Tier 1</option>
+            <option value="1">Tier 2</option>
+            <option value="2">Tier 3</option>
+          </select>
+        </div>
+      </form>
+    </div>
+  </div> -->
+
+  <!-- ROW11 -->
+
+  <!-- <div class="row r11">
+    <div class="col-sm-9 r11c2">
+      <form class="" action="/predict" method="post">
+        <div class="form-group fg7">
+          <p class="det">Represents the export type from Groceries,Supermarket </p>
+          <label for="outlet_type" class="ph-area lb">Enter Outlet Type</label>
+          <select class="form-control chosenn" name="outlet_type" required="required">
+            <option value="" selected>Select Outlet Type</option>
+            <option value="0">Grocery Store</option>
+            <option value="1">Supermarket Type1</option>
+            <option value="2">Supermarket Type2</option>
+            <option value="3">Supermarket Type3</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+
+  <div class="sbuttons">
+    <form class="" action="/predict" method="post">
+      <div class="form-group fg8">
+        <input type="submit" class="btn " value="Submit">
+        <input type="reset" class="btn" value="Reset">
+      </div>
+    </form>
+  </div> -->
+
+  <form class="fc" action="/predict" method="post">
+    <div class="form-group fg1">
+      <p class="det">Represents the weight of the product in kgs.</p>
+      <label for="item_weight" class="ph-area lb">Enter Item Weight</label>
+      <input type="text" name="item_weight" id="item_weight" class="form-control" required>
+    </div>
+
+    <div class="form-group fg2">
+      <p class="det">Exhibits the fat content in the product(Low,Medium,High).</p>
+      <label for="item_fat_content" class="ph-area lb">Enter Item Fat Content</label>
+      <select class="form-control" name="item_fat_content" required="required">
+        <option value="" selected>Select Fat Content</option>
+        <option value="1">Low Fat</option>
+        <option value="2">Regular</option>
+        <option value="0">High Fat</option>
+      </select>
+    </div>
+
+    <div class="form-group fg3">
+      <p class="det">Represents the type of the product(Listed down in drop down).</p>
+      <label for="item_type" class="ph-area lb">Enter Item Type</label>
+      <select class="form-control chosenn" name="item_type" required="required">
+        <option value="" selected>Select Item Type</option>
+        <option value="0">Baking Goods</option>
+        <option value="1">Breads</option>
+        <option value="2">Breakfast</option>
+        <option value="3">Canned</option>
+        <option value="4">Dairy</option>
+        <option value="5">Frozen Foods</option>
+        <option value="6">Fruits and Vegetables</option>
+        <option value="7">Hard Drinks</option>
+        <option value="8">Health and Hygiene</option>
+        <option value="9">Household</option>
+        <option value="10">Meat</option>
+        <option value="11">Others</option>
+        <option value="12">Seafood</option>
+        <option value="13">Snack Foods</option>
+        <option value="14">Soft Drinks</option>
+        <option value="15">Starchy Foods</option>
+      </select>
+    </div>
+
+    <div class="form-group fg4">
+      <p class="det">Represents the prize of the item.</p>
+      <label for="item_mrp" class="ph-area lb">Enter Item MRP</label>
+      <input type="text" name="item_mrp" id="item_mrp" class="form-control" required>
+    </div>
+
+    <div class="form-group fg5">
+      <p class="det">Describes the export size(High,Medium,Small).</p>
+      <label for="outlet_size" class="ph-area lb">Enter Outlet Size</label>
+      <select class="form-control chosenn" name="outlet_size" required="required">
+        <option value="" selected>Select Outlet Size</option>
+        <option value="0">High</option>
+        <option value="1">Medium</option>
+        <option value="2">Small</option>
+      </select>
+    </div>
+
+    <div class="form-group fg6">
+      <p class="det">Describe the product export from cities,categorized as Tier1,2,3.</p>
+      <label for="outlet_location_type" class="ph-area lb">Enter Outlet Location Type</label>
+      <select class="form-control chosenn" name="outlet_location_type" required="required">
+        <option value="" selected>Select Outlet Location Type</option>
+        <option value="0">Tier 1</option>
+        <option value="1">Tier 2</option>
+        <option value="2">Tier 3</option>
+      </select>
+    </div>
+
+    <div class="form-group fg7">
+      <p class="det">Represents the export type from Groceries,Supermarket </p>
+      <label for="outlet_type" class="ph-area lb">Enter Outlet Type</label>
+      <select class="form-control chosenn" name="outlet_type" required="required">
+        <option value="" selected>Select Outlet Type</option>
+        <option value="0">Grocery Store</option>
+        <option value="1">Supermarket Type1</option>
+        <option value="2">Supermarket Type2</option>
+        <option value="3">Supermarket Type3</option>
+      </select>
+    </div>
+
+    <div class="sbuttons">
+      <div class="form-group fg8">
+        <input type="submit" class="btn b1" value="Submit">
+        <input type="reset" class="btn b2" value="Reset">
+      </div>
+    </div>
+  </form>
+
+
+  <!-- FOOTER -->
+
+  <div class="footer">
+    <a href="#"><img src="{{url_for('static',filename='fimg1.png')}}" class="fimg1"></a>
+    <a href="mailto:sakthii6@outlook.com"><img src="{{url_for('static',filename='fimg2.png')}}" class="fimg2"></a>
+  </div>
+
+</body>
+
+</html>

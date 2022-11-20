@@ -1,0 +1,88 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+/* Prediction */
+.heading {
+  font-size: 6rem;
+  font-family: 'Arvo', serif;
+  text-align: center;
+  background-color: #A66CFF;
+  margin-bottom: 0;
+  color: black;
+}
+
+.pred {
+  background-color: black;
+  color: #A66CFF;
+}
+
+.oh {
+  font-size: 1.5rem;
+  color: #A66CFF;
+  font-size: 25px;
+  font-family: 'Noto Serif Khojki', serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.motive {
+  font-size: 25px;
+  font-family: 'Arvo', serif;
+}
+
+.r1c1 {
+  padding-left: 30px;
+  padding-top: 60px;
+}
+
+.mh {
+  font-size: 40px;
+  font-family: 'Arvo', serif;
+}
+
+.mimg {
+  height: 80%;
+  weight: 80%;
+}
+
+.r1c2 {
+  padding-left: 60px;
+  padding-top: 20px;
+}
+
+.o {
+  text-align: center;
+  font-size: 45px;
+  font-family: 'Noto Serif Khojki', serif;
+  font-weight: bolder;
+  margin-bottom: 0;
+}
+
+.footer {
+  background-color: #A66CFF;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.btn {
+  background-color: black;
+  color: #A66CFF;
+  font-family: 'Arvo', serif;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: #A66CFF;
+  color: black;
+  border: solid 3px;
+}
+
+p.o {
+  padding-bottom: 20px;
+}
